@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scorekeeper</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+    
+  > 
+  <link rel="Stylesheet" href="./scorekeeper.css">
+</head>
+<body>
+<section class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card">
+                    <header class="card-header">
+                      <p class="card-header-title">PING PONG SCOREKEEPER</p>
+                        <button class="card-header-icon" aria-label="more options">
+                        <span class="icon">
+                          <i class="fas fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                        </button>
+                        </header>
+                        <div class="card-content">
+                        <div class="content">
+                        <div id="image">
+                            <img src="pingpong.jpg" width="700">
+                        </div>   
+                        <h class="title is-one"><span id =p1displayscore>0</span> to <span id="p2displayscore">0</span></h> 
+                        <p>Use the buttons below to play game</p>
+                        <label class ="label is-large is-inline">Playing to</label>
+                        <div class ="select is-rounded"id="selectbutton">
+                        <select id="selectbut">
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="butt">
+                        <button class="button is-primary is-dark" id ="p1but" >+1 Player one</button>
+                        <button class="button is-primary is-dark" id="p2but">+1 Player two</button>
+                        <button class="button is-danger is-dark" id ="resetbut">Reset</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src = "scorekeeper.js"></script>    
+</body>    
+</html> 
+
+
