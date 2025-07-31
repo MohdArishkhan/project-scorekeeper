@@ -17,8 +17,8 @@ p1but.addEventListener('click', function () {
             isgameover = true;
             p1displayscore.classList.add('winner');
             p2displayscore.classList.add('loser');
-            p1but.disable=true;
-            p2but.disable=true;
+            p1but.disabled = true;
+            p2but.disabled = true;
         } 
         p1displayscore.textContent = p1score;        
     }
@@ -31,31 +31,28 @@ p2but.addEventListener('click', function () {
             isgameover = true;
             p2displayscore.classList.add('winner');
             p1displayscore.classList.add('loser');
-            p1but.disable=true;
-            p2but.disable=true;
+            p1but.disabled = true;
+            p2but.disabled = true;
         } 
         p2displayscore.textContent = p2score;
-        
     }
-    
 });
 
 resetbut.addEventListener('click', reset);
 
-winningscorechange.addEventListener('change', function() {
-    // Parse and set new winning score from dropdown
-    winningscore = parseInt(this.value); 
-    reset(); // Reset the game when the winning score is changed
+winningscorechange.addEventListener('change', function () {
+    winningscore = parseInt(this.value);
+    reset();
 });
 
 function reset() {
-    isgameover = false; // Ensure game state is reset
+    isgameover = false;
     p1score = 0;
     p2score = 0;
     p1displayscore.textContent = 0;
     p2displayscore.textContent = 0;
-    p1displayscore.classList.remove('winner','loser');
-    p2displayscore.classList.remove('winner','loser');
-    p1but.disable=false;
-    p2but.disable=false;
+    p1displayscore.classList.remove('winner', 'loser');
+    p2displayscore.classList.remove('winner', 'loser');
+    p1but.disabled = false;
+    p2but.disabled = false;
 }

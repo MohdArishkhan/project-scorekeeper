@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .winner{
     color: hsl(141, 100%, 50%);
 }
@@ -7,4 +8,15 @@
 #image img {
     width: 100%;
     height: auto;
+=======
+.winner{
+    color: hsl(141, 100%, 50%);
+}
+.loser{
+    color: rgb(201, 42, 42);
+}
+#image img {
+    width: 100%;
+    height: auto;
+>>>>>>> 0dd51b662dc65338de2b4754c006d99e8772a7da
 }
